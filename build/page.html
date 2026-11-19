@@ -49,20 +49,16 @@
   .briefs-head { display: flex; justify-content: space-between; align-items: baseline; border-top: 2.5px solid #191914; border-bottom: 1px solid #191914; padding: 2px 0 2px 0; margin-bottom: 4px; }
   .briefs-head .t { font-size: 15px; font-weight: 900; letter-spacing: 3px; }
   .briefs-head .n { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10.5px; color: #b03327; font-weight: bold; letter-spacing: 1.4px; }
-  .briefs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px 13px; }
-  .brief { font-size: 10.2px; line-height: 1.18; color: #33302a; border-top: 1px solid #cbbd93; padding-top: 3px; }
+  .briefs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px 12px; }
+  .brief { font-size: 16.1px; line-height: 1.38; color: #33302a; border-top: 1px solid #cbbd93; padding-top: 5px; }
   .brief b { color: #191914; }
-  .brief .pl { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 9px; font-weight: bold; letter-spacing: 1px; color: #b03327; display: block; line-height: 1.1; }
+  .brief .pl { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 1px; color: #b03327; display: block; line-height: 1.15; margin-bottom: 1px; }
   .brief .no { color: #b03327; font-weight: bold; }
+  .briefband { grid-column: 1 / -1; border-top: 2px solid #191914; text-align: center; padding-top: 8px; font-size: 20px; font-weight: 900; letter-spacing: 2.5px; color: #191914; }
+  .briefband .dot { color: #b03327; }
 
-  /* ---------- map ---------- */
-  .mapbox { border: 2px solid #191914; background: #efe6cb; margin-top: 5px; padding: 2px 8px 2px 8px; }
-  .mapbox .mt { display: flex; justify-content: space-between; align-items: baseline; }
-  .mapbox .mt .t { font-size: 12.5px; font-weight: 900; letter-spacing: 3px; }
-  .mapbox .mt .r { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #b03327; font-size: 10px; letter-spacing: 1.4px; font-weight: bold; }
-  .mapbox svg { display: block; width: 100%; }
 
-  .footer { text-align: center; font-size: 10.5px; letter-spacing: 1.4px; color: #5c584c; padding-top: 5px; }
+  .footer { text-align: center; font-size: 13px; letter-spacing: 1.6px; color: #5c584c; padding-top: 6px; }
 </style>
 </head>
 <body>
@@ -262,106 +258,29 @@
   <!-- BRIEFS -->
   <div class="briefs-head">
     <div class="t">ALSO TODAY — THE WORLD IN BRIEF</div>
-    <div class="n">25 MORE STORIES · EVERY CONTINENT</div>
+    <div class="n">16 MORE STORIES · EVERY CONTINENT</div>
   </div>
   <div class="briefs">
-    <div class="brief"><span class="pl">FIJI &amp; TONGA</span><span class="no">8</span> <b>Pacific drought emergency.</b> Fiji declares a national disaster, Tonga a 27-day emergency as El Niño dries up water.</div>
+    <div class="brief"><span class="pl">FIJI &amp; TONGA</span><span class="no">8</span> <b>Drought emergency.</b> Fiji declares a national disaster, Tonga a 27-day emergency as El Niño dries up water.</div>
     <div class="brief"><span class="pl">LOS ANGELES, US</span><span class="no">9</span> <b>Storm brings flood risk.</b> Atmospheric river hits Southern California: flood watch, warnings near burn scars.</div>
     <div class="brief"><span class="pl">ANTALYA, TÜRKIYE</span><span class="no">10</span> <b>COP31 deadlocked.</b> Ministers scramble over the fossil-fuel text as the climate talks run out of road.</div>
     <div class="brief"><span class="pl">MARKETS</span><span class="no">11</span> <b>Shares slide on AI fears.</b> Hong Kong and Europe fall; Fed minutes flag risks in the AI investment boom.</div>
     <div class="brief"><span class="pl">MARKETS</span><span class="no">12</span> <b>Metals and crypto slip.</b> Gold, copper and bitcoin fall; Brent crude holds near $89.59.</div>
-    <div class="brief"><span class="pl">MIAMI, US</span><span class="no">13</span> <b>Pastor convicted in Haiti plot.</b> Found guilty over the 2021 assassination of President Moïse.</div>
-    <div class="brief"><span class="pl">GAZA</span><span class="no">14</span> <b>Ground operation grinds on.</b> Israel's central Gaza offensive continues; more families flee.</div>
-    <div class="brief"><span class="pl">HORN OF AFRICA</span><span class="no">15</span> <b>Armies mass on the border.</b> Ethiopia and Eritrea build up forces; clashes fuel war fears.</div>
-    <div class="brief"><span class="pl">NEW YORK, ART</span><span class="no">16</span> <b>Van Gogh record: $190.4m.</b> “Chestnut Trees in Blossom” sets an artist auction record at Sotheby's.</div>
-    <div class="brief"><span class="pl">KUMAMOTO, JAPAN</span><span class="no">17</span> <b>Quake injures two.</b> Magnitude 5.7 at 02:22: evacuations ordered, no tsunami, aftershocks warned.</div>
-    <div class="brief"><span class="pl">RIYADH, SAUDI ARABIA</span><span class="no">18</span> <b>Tower hit by missile debris.</b> PIF Tower damaged in Houthi attack; district evacuated, none hurt.</div>
-    <div class="brief"><span class="pl">SEOUL, SOUTH KOREA</span><span class="no">19</span> <b>550,000 sit the big exam.</b> Suneung runs under an AI-cheating crackdown: 98 caught, $75,000 rewards.</div>
-    <div class="brief"><span class="pl">AUSTRALIA</span><span class="no">20</span> <b>Jobless rate hits 4.9%.</b> Five-year high as jobs fall 43,500; traders bet on rate cuts.</div>
-    <div class="brief"><span class="pl">NEW YORK, BOOKS</span><span class="no">21</span> <b>National Book Awards.</b> Assadi's “Paradiso 17” wins fiction; ElGendy's “Huna” takes nonfiction.</div>
-    <div class="brief"><span class="pl">NASHVILLE, MUSIC</span><span class="no">22</span> <b>Langley's record CMA sweep.</b> Ella Langley wins six CMA Awards, including Entertainer of the Year — a record haul.</div>
-    <div class="brief"><span class="pl">TURIN, TENNIS</span><span class="no">23</span> <b>Alcaraz into the semis.</b> The Spaniard beats Medvedev 6-2 6-4 at the ATP Finals in Turin.</div>
-    <div class="brief"><span class="pl">PARIS, FOOTBALL</span><span class="no">24</span> <b>Chelsea top the phase.</b> Buurman's 87th-minute goal beats PSG 1-0 in the Women's Champions League.</div>
-    <div class="brief"><span class="pl">ODISHA, INDIA</span><span class="no">25</span> <b>80,000 flee Cyclone Akvan.</b> 74 rescue teams deployed, schools shut as landfall nears Gopalpur.</div>
-    <div class="brief"><span class="pl">WASHINGTON, IRAN</span><span class="no">26</span> <b>Trump weighs new strikes.</b> Said to weigh attacks over claims Iran explores chemical weapons; Tehran denies.</div>
-    <div class="brief"><span class="pl">AMMAN, CHILDREN</span><span class="no">27</span> <b>Record 589m children in war zones.</b> Nearly one in four worldwide, most since 1990; Africa 44%.</div>
-    <div class="brief"><span class="pl">CAPE CANAVERAL, SPACE</span><span class="no">28</span> <b>Cygnus launch set for Nov 29.</b> NASA fixes CRS-25 date: 11,000 lb of cargo for the station.</div>
-    <div class="brief"><span class="pl">MELBOURNE, TENNIS</span><span class="no">29</span> <b>Barty into the Hall of Fame.</b> Elected at first eligibility; induction next August in Newport.</div>
-    <div class="brief"><span class="pl">SEOUL, TRADE</span><span class="no">30</span> <b>Exports pass $1 trillion.</b> Only the fourth country ever to reach the mark, on an AI chip boom.</div>
-    <div class="brief"><span class="pl">SHENZHEN, JAPAN–RUSSIA</span><span class="no">31</span> <b>First talks in seven years.</b> Takaichi and Putin meet at the summit, agree to keep talking.</div>
-    <div class="brief"><span class="pl">BOGOTÁ, COLOMBIA</span><span class="no">32</span> <b>Nationwide strike.</b> Unions march in Bogotá, Medellín, Cali against the rescue bill; US alert.</div>
-    <div class="brief" style="border-top:2px solid #191914; text-align:center; padding-top:6px;">
-      <span style="font-size:19px; font-weight:900; color:#191914;">32 STORIES</span><br>
-      <span class="sans" style="font-size:9.5px; font-weight:bold; letter-spacing:1.6px; color:#b03327;">SIX CONTINENTS · ONE DAY</span>
-    </div>
+    <div class="brief"><span class="pl">GAZA</span><span class="no">13</span> <b>Ground operation grinds on.</b> Israel's central Gaza offensive continues; more families flee.</div>
+    <div class="brief"><span class="pl">HORN OF AFRICA</span><span class="no">14</span> <b>Armies mass on the border.</b> Ethiopia and Eritrea build up forces; clashes fuel war fears.</div>
+    <div class="brief"><span class="pl">NEW YORK, ART</span><span class="no">15</span> <b>Van Gogh record: $190.4m.</b> “Chestnut Trees in Blossom” sets an artist auction record at Sotheby's.</div>
+    <div class="brief"><span class="pl">KUMAMOTO, JAPAN</span><span class="no">16</span> <b>Quake injures two.</b> Magnitude 5.7 at 02:22: evacuations ordered, no tsunami, aftershocks warned.</div>
+    <div class="brief"><span class="pl">RIYADH, SAUDI ARABIA</span><span class="no">17</span> <b>Tower hit by missile debris.</b> PIF Tower damaged in Houthi attack; district evacuated, none hurt.</div>
+    <div class="brief"><span class="pl">SEOUL, SOUTH KOREA</span><span class="no">18</span> <b>550,000 sit the big exam.</b> Suneung runs under an AI-cheating crackdown: 98 caught, $75,000 rewards.</div>
+    <div class="brief"><span class="pl">AUSTRALIA</span><span class="no">19</span> <b>Jobless rate hits 4.9%.</b> Five-year high as jobs fall 43,500; traders bet on rate cuts.</div>
+    <div class="brief"><span class="pl">ODISHA, INDIA</span><span class="no">20</span> <b>80,000 flee Cyclone Akvan.</b> 74 rescue teams deployed, schools shut as landfall nears Gopalpur.</div>
+    <div class="brief"><span class="pl">AMMAN, CHILDREN</span><span class="no">21</span> <b>Record 589m children in war zones.</b> Nearly one in four worldwide, most since 1990; Africa 44%.</div>
+    <div class="brief"><span class="pl">SEOUL, TRADE</span><span class="no">22</span> <b>Exports pass $1 trillion.</b> Only the fourth country ever to reach the mark, on an AI chip boom.</div>
+    <div class="brief"><span class="pl">BOGOTÁ, COLOMBIA</span><span class="no">23</span> <b>Nationwide strike.</b> Unions march in Bogotá, Medellín, Cali against the rescue bill; US alert.</div>
+    <div class="briefband">23 STORIES <span class="dot">·</span> SIX CONTINENTS <span class="dot">·</span> ONE DAY</div>
   </div>
 
-  <!-- MAP -->
-  <div class="mapbox">
-    <div class="mt">
-      <div class="t">WHERE IT HAPPENED</div>
-      <div class="r">31 PINS · NO. 12 IS WORLD MARKETS</div>
-    </div>
-    <svg viewBox="0 0 944 112">
-      <g fill="#ddcb96" stroke="#191914" stroke-width="1.1">
-        <path d="M10,14 L60,6 L130,4 L190,8 L215,18 L245,22 L255,34 L240,48 L232,58 L205,50 L185,58 L195,72 L188,80 L172,68 L160,56 L140,44 L120,30 L80,22 L40,20 Z"/>
-        <path d="M255,6 L292,4 L296,16 L262,18 L252,14 Z"/>
-        <path d="M250,66 L285,62 L315,68 L355,76 L340,90 L322,98 L295,106 L278,112 L268,112 L262,100 L266,86 L250,78 L242,72 Z"/>
-        <path d="M415,38 L450,34 L490,34 L520,36 L540,38 L548,42 L556,50 L585,56 L590,62 L575,72 L560,84 L548,96 L530,104 L512,105 L500,98 L492,86 L488,74 L478,62 L455,58 L430,52 L416,44 Z"/>
-        <path d="M578,84 L588,88 L584,100 L574,94 Z"/>
-        <path d="M428,34 L430,24 L442,20 L455,18 L472,15 L490,8 L505,6 L540,4 L580,3 L640,2 L700,3 L770,2 L840,3 L890,5 L925,7 L920,14 L895,16 L880,20 L865,26 L850,30 L838,26 L828,32 L820,38 L812,44 L795,48 L770,52 L760,62 L748,66 L738,72 L730,64 L722,58 L705,54 L668,66 L655,52 L640,48 L615,46 L600,56 L580,60 L562,50 L548,40 L530,36 L510,34 L495,38 L488,44 L478,34 L460,32 L445,36 Z"/>
-        <path d="M752,80 L760,88 L775,92 L800,90 L818,92 L832,97 L848,96 L862,90 L866,82 L856,76 L840,72 L832,78 L822,74 L812,70 L798,72 L784,78 L770,84 L758,86 Z"/>
-        <ellipse cx="450" cy="14" rx="4.5" ry="6.5" transform="rotate(18 450 14)"/>
-        <ellipse cx="818" cy="36" rx="3.5" ry="7" transform="rotate(-25 818 36)"/>
-        <ellipse cx="830" cy="29" rx="3" ry="5.5" transform="rotate(-25 830 29)"/>
-        <ellipse cx="695" cy="68" rx="13" ry="3.5" transform="rotate(25 695 68)"/>
-        <ellipse cx="724" cy="68" rx="10" ry="5"/>
-        <ellipse cx="736" cy="74" rx="14" ry="3"/>
-        <ellipse cx="752" cy="69" rx="4" ry="4"/>
-        <ellipse cx="795" cy="72" rx="17" ry="4.5"/>
-        <ellipse cx="768" cy="54" rx="4" ry="8"/>
-        <ellipse cx="906" cy="96" rx="3" ry="7" transform="rotate(35 906 96)"/>
-        <ellipse cx="898" cy="105" rx="2.5" ry="5" transform="rotate(35 898 105)"/>
-        <circle cx="862" cy="101" r="2.5"/>
-        <circle cx="928" cy="84" r="3"/>
-      </g>
-      <g font-family="Helvetica, Arial, sans-serif" font-weight="bold" font-size="7.6" fill="#fff" text-anchor="middle">
-        <g><circle cx="772" cy="44" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="772" y="46.7">1</text></g>
-        <g><circle cx="468" cy="20" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="468" y="22.7">2</text></g>
-        <g><circle cx="248" cy="32" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="248" y="34.7">3</text></g>
-        <g><circle cx="548" cy="28" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="548" y="30.7">4</text></g>
-        <g><circle cx="608" cy="48" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="608" y="50.7">5</text></g>
-        <g><circle cx="700" cy="50" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="700" y="52.7">6</text></g>
-        <g><circle cx="238" cy="52" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="238" y="54.7">7</text></g>
-        <g><circle cx="928" cy="84" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="928" y="86.7">8</text></g>
-        <g><circle cx="128" cy="40" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="128" y="42.7">9</text></g>
-        <g><circle cx="528" cy="40" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="528" y="42.7">10</text></g>
-        <g><circle cx="444" cy="18" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="444" y="20.7">11</text></g>
-        <g><circle cx="228" cy="58" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="228" y="60.7">13</text></g>
-        <g><circle cx="540" cy="44" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="540" y="46.7">14</text></g>
-        <g><circle cx="562" cy="58" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="562" y="60.7">15</text></g>
-        <g><circle cx="258" cy="24" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="258" y="26.7">16</text></g>
-        <g><circle cx="824" cy="33" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="824" y="35.7">17</text></g>
-        <g><circle cx="580" cy="50" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="580" y="52.7">18</text></g>
-        <g><circle cx="834" cy="28" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="834" y="30.7">19</text></g>
-        <g><circle cx="852" cy="92" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="852" y="94.7">20</text></g>
-        <g><circle cx="240" cy="22" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="240" y="24.7">21</text></g>
-        <g><circle cx="222" cy="36" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="222" y="38.7">22</text></g>
-        <g><circle cx="478" cy="26" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="478" y="28.7">23</text></g>
-        <g><circle cx="460" cy="22" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="460" y="24.7">24</text></g>
-        <g><circle cx="690" cy="56" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="690" y="58.7">25</text></g>
-        <g><circle cx="246" cy="40" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="246" y="42.7">26</text></g>
-        <g><circle cx="532" cy="48" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="532" y="50.7">27</text></g>
-        <g><circle cx="232" cy="46" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="232" y="48.7">28</text></g>
-        <g><circle cx="838" cy="95" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="838" y="97.7">29</text></g>
-        <g><circle cx="822" cy="24" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="822" y="26.7">30</text></g>
-        <g><circle cx="762" cy="50" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="762" y="52.7">31</text></g>
-        <g><circle cx="262" cy="68" r="6" fill="#b03327" stroke="#fff" stroke-width="1.1"/><text x="262" y="70.7">32</text></g>
-      </g>
-    </svg>
-  </div>
-
-  <div class="footer sans">EVERY STORY REPORTED ON THURSDAY 19 NOVEMBER 2026 AND CROSS-CHECKED IN AT LEAST TWO OUTLETS</div>
+  <div class="footer sans">EVERY STORY REPORTED ON THURSDAY 19 NOVEMBER · CROSS-CHECKED IN AT LEAST TWO OUTLETS</div>
 
 </body>
 </html>
